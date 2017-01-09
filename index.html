@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>mr-schmitt | projects</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <script src="javascripts/projects.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -20,15 +22,17 @@
         <p class="view"><a href="https://github.com/mr-schmitt">GitHub</a></p>
       </header>
       <section>
-        <!-- sorting button place holder
-          <table>
-            <tr>
-              <td><button>Sort 1</button></td>
-              <td><button>Sort 2</button></td>
-              <td><button>Sort 3</button></td>
+        <table>
+           <tr>
+              <td><strong>Sort: </strong></td>
+              <td><button onclick="generateTables(projectList)">All</button></td>
+              <td><button onclick="buttonPress('C#')">C#</button></td>
+              <td><button onclick="buttonPress('Java')">Java</button></td>
+              <td><button onclick="buttonPress('JS')">JS</button></td>
+              <td><button onclick="buttonPress('Unity')">Unity</button></td>
+              <td><button onclick="buttonPress('Curriculum')">Curriculum</button></td>
             </tr>
-          </table> 
-        -->
+        </table>
         <table id = "projects"></table>
       </section>
       <footer>
@@ -38,6 +42,8 @@
     <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/scale.fix.js"></script>
     <script src="javascripts/animations.js"></script>
-    <script src="javascripts/projects.js"></script>
+    <script> generateTables(projectList);
+    function buttonPress(filter){sortTable(projectList, filter);}
+    </script>
   </body>
 </html>
