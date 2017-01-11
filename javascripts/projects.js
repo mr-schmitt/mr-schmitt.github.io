@@ -20,7 +20,7 @@ function generateTables(projArray){
             // add all HTML necessary for project table
             document.getElementById("projects").insertAdjacentHTML("beforeEnd", 
             // setup the table
-            "<tr style = 'position:relative;' class = 'project' id = 'row" + i + "'><td>" +
+            "<tr style = 'position:relative;' class = 'project' id = 'row" + i + "'><td style = 'width: 100px'>" +
             // image & link in first column
             "<a href ='" + projArray[i].link + "'>" + "<img src='" + projArray[i].icon +"'></a></td>" +
             // header and paragraph in a new column
