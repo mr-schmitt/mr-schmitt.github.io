@@ -84,6 +84,14 @@ button:hover {
   background : #9c9696;
 }
 
+#project {
+  position:absolute;
+}
+
+#project:hover {
+  background : #bdb9b9;
+}
+
 h1 {
   font-size:28px;
 }

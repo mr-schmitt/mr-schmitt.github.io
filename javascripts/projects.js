@@ -1,9 +1,9 @@
 // TODO - use JSON file to hold all project data
-// TODO - add divs for tag names in table generation
-// TODO - update image sizes to be constant
+// TODO - add tag names in table generation
+// TODO - update table spacing + size to be constant
 
 var projectList = [
-        {title : "Game Development 1 - Example Student Project", tags : ["Unity", "C#", "Curriculum"], text : "Example final project for the Youth Digital <a href='http://www.youthdigital.com/3d-game-development-1'>Game Development 1</a> course.", icon : "img/ud164.png", id : "gd1", link: "https://mr-schmitt.github.io/UD1WebGLBuild/"},
+        {title : "Game Development 1", tags : ["Unity", "C#", "Curriculum"], text : "A course in C# and Unity Game Development on the Youth Digital learning platform.  See an example final project <a href='https://mr-schmitt.github.io/UD1WebGLBuild/'>here</a>.", icon : "img/ud164.png", id : "gd1", link: "http://www.youthdigital.com/3d-game-development-1"},
         {title : "RollerBall Game", tags : ["Unity", "C#"], text : "Simple game built with Unity", icon : "img/ball64.png", id : "ball-game", link: "https://mr-schmitt.github.io/ball-game"},
         {title : "The Molar System",tags : ["Unity", "C#"], text : "Interactive \"Solar System\" replica", icon : "img/molar64.png", id: "molar-system", link : "https://mr-schmitt.github.io/molar-system"},
         {title : "Two-Player Pong Game", tags : ["JS"], text : "In-browser game built using Superpowers", icon : "img/pong64.png", id: "pong", link : "https://mr-schmitt.github.io/pong-sp"},
@@ -18,7 +18,19 @@ function generateTables(projArray){
             console.log("Could not find data for project " + projArray[i] + ".  Skipping table entry.");
         } else {
             // add all HTML necessary for project table
-            document.getElementById("projects").insertAdjacentHTML("beforeEnd", "<tr><td><a href ='" + projArray[i].link + "'><img src='" + projArray[i].icon +"'></a></td><td><h3><a id='"+ projArray[i].id + "' class='anchor' href='#" + projArray[i].id + "' aria-hidden='true'><span aria-hidden='true' class='octicon octicon-link'></span></a>" + projArray[i].title + "</h3><p>" + projArray[i].text + "</p></td></tr>");
+            document.getElementById("projects").insertAdjacentHTML("beforeEnd", 
+            // setup the table
+            "<tr style = 'position:relative;' class = 'project' id = 'row" + i + "'><td>" +
+            // image & link in first column
+            "<a href ='" + projArray[i].link + "'>" + "<img src='" + projArray[i].icon +"'></a></td>" +
+            // header and paragraph in a new column
+            "<td><h3>" + projArray[i].title + "</h3>" +
+            "<p>" + projArray[i].text + "</p></td></tr>");
+
+            /* trigger the animation
+            $(document).on("each", "#row"+i, function(){
+                $(this).hide().fadeIn(i * 1000);
+            });*/
         }
     }
 }
