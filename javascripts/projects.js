@@ -1,9 +1,9 @@
 // TODO - use JSON file to hold all project data
 // TODO - add tag names in table generation
-// TODO - update table spacing + size to be constant
 
 var projectList = [
-        {title : "Game Development 1", tags : ["Unity", "C#", "Curriculum"], text : "A course in C# and Unity Game Development on the Youth Digital learning platform.  See an example final project <a href='https://mr-schmitt.github.io/UD1WebGLBuild/'>here</a>.", icon : "img/ud164.png", id : "gd1", link: "http://www.youthdigital.com/3d-game-development-1"},
+        {title : "Game Development 1", tags : ["Unity", "C#", "Curriculum"], text : "A course in C# and Unity Game Development on the <a href='http://www.youthdigital.com/3d-game-development-1'>Youth Digital</a> learning platform.  See an example final project <a href='https://mr-schmitt.github.io/UD1WebGLBuild/'>here</a>.", icon : "img/ud164.png", id : "gd1", link: "http://www.youthdigital.com/3d-game-development-1"},
+        {title : "About Page",tags : ["JS", "Web"], text : "A landing page for my Portfolio, Timeline, and CV. Friendly on the eyes.", icon : "img/about64.png", id: "about", link : "https://mr-schmitt.github.io/about"},
         {title : "RollerBall Game", tags : ["Unity", "C#"], text : "Simple game built with Unity", icon : "img/ball64.png", id : "ball-game", link: "https://mr-schmitt.github.io/ball-game"},
         {title : "The Molar System",tags : ["Unity", "C#"], text : "Interactive \"Solar System\" replica", icon : "img/molar64.png", id: "molar-system", link : "https://mr-schmitt.github.io/molar-system"},
         {title : "Two-Player Pong Game", tags : ["JS"], text : "In-browser game built using Superpowers", icon : "img/pong64.png", id: "pong", link : "https://mr-schmitt.github.io/pong-sp"},
@@ -20,7 +20,7 @@ function generateTables(projArray){
             // add all HTML necessary for project table
             document.getElementById("projects").insertAdjacentHTML("beforeEnd", 
             // setup the table
-            "<tr style = 'position:relative;' class = 'project' id = 'row" + i + "'><td style = 'width: 100px'>" +
+            "<tr style = 'position:relative;' class = 'project' id = 'row" + i + "'><td>" +
             // image & link in first column
             "<a href ='" + projArray[i].link + "'>" + "<img src='" + projArray[i].icon +"'></a></td>" +
             // header and paragraph in a new column
