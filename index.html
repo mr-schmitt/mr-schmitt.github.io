@@ -1,51 +1,91 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>mr-schmitt | projects</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 
-    
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Michael R. Schmitt</h1>
-        <p>Game Developer & Instructional Designer</p>
-        <br>
-        <h4>Project Portfolio</h4>
-        <p class="view"><a href="MichaelSchmitt-CV.pdf">Download my CV</a></p>
-      </header>
-      <section>
-        <table>
-           <tr>
-              <td><strong>Filter: </strong></td>
-              <td><button onclick="generateTables(projectList)">All</button></td>
-              <td><button onclick="buttonPress('GameDev')">Game Development</button></td>
-              <td><button onclick="buttonPress('Curriculum')">Curriculum Development</button></td>
-              <td></td>
-            </tr>
-        </table>
-        <table id = "projects"></table>
-      </section>
-      <footer>
-      </footer>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>michael schmitt - portfolio</title>
+
+<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+</head>
+
+<body>
+<!-- CACHE -->
+<div class="cache"></div>
+
+<!-- HEADER -->
+
+<div id="wrapper-header">
+	<div id="main-header" class="object">
+		<div class="logo"><img src="img/mrs-logo.svg" alt="logo" height="42" width="260"></div>
+        <div id="stripes"></div>
     </div>
-    <script src="javascripts/jquery-3.1.1.min.js"></script>
-    <script src="javascripts/projects.js"></script>
-    <script src="javascripts/animations.js"></script>
-    <script src="javascripts/scale.fix.js"></script>
-    <script> 
-      generateTables(projectList);
-      function buttonPress(filter){sortTable(projectList, filter);}
-    </script>
-  </body>
+</div>
+
+<!-- NAVBAR -->
+
+<div id="wrapper-navbar">
+	<div class="navbar object">
+		<div id="wrapper-sorting">
+            
+            <div id="filter-all">
+            	<a onclick="filterProjects('all')"><div class="top-rated object">All</div></a>
+    		</div>
+            
+            <div id="filter-design">
+            	<a onclick="filterProjects('design')"><div class="recent object"><i class="far fa-file-alt"></i>    Design</div></a>
+    		</div>
+            
+            <div id="filter-code">
+            	<a onclick="filterProjects('code')"><div class="recent object"><i class="fas fa-code"></i>     Development</div></a> 
+    		</div>
+    		
+    		 <div id="filter-audio">
+	         	<a onclick="filterProjects('audio')"><div class="recent object"><i class="fas fa-music"></i>    Audio</div></a>
+    		</div>
+    		
+    		<div id="filter-art">
+	         	<a onclick="filterProjects('art')"><div class="recent object"><i class="fas fa-paint-brush"></i>    Art</div></a>
+    		</div>
+    		
+        </div>
+	</div>
+</div>
+
+<!-- PORTFOLIO -->
+
+<div id="wrapper-container" style = "min-height: 100%;">
+    
+	<div class="container object">
+
+		<div id="main-container-image">
+                       
+			<section class="work" id = "projects">
+						
+			</section>
+                    
+		</div>	
+            	    
+	</div>
+    
+<!-- SCRIPT -->
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery-animate-css-rotate-scale.js"></script>
+	<script type="text/javascript" src="js/fastclick.min.js"></script>
+	<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+	<script type="text/javascript" src="js/jquery.animate-shadow-min.js"></script>
+	<script type="text/javascript" src="js/porfolioGeneration.js"></script>
+	<script>generateProjectEntries(projectList);</script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
