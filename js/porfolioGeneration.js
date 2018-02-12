@@ -4,8 +4,9 @@ var projectList = [
         {title : "Game Development 1", year : "2016", tag : ["code", "design"], text : "An online course in Unity 3D Game development and C# programming", icon : "img/UD1.png", link: "http://www.youthdigital.com/3d-game-development-1"},
         {title : "Chicken Tender", year : "2017", tag : ["code", "design","audio", "art"], text : "Tend to your flock! A silly agricultural simulator built for LD40", icon : "img/chickentender.png", link: "https://toomuchtomato.itch.io/chicken-tender"},
         {title : "Server Design 1", year : "2015", tag : ["code", "design"], text : "An online course in Java Programming. Learn to create your own Minecraft Server", icon : "img/SD1.png", link : "http://www.youthdigital.com/server-design-1"},
-        {title : "The Machine's Garden", year : "2018", tag : ["code", "design", "audio"], text : "Use the intelligence of a decommissioned military supercomputer to solve puzzles and guide the lives of humble villagers", icon : "img/tmg.png", link: "https://twitter.com/machinesgarden"},
+        {title : "The Machine's Garden", year : "2018", tag : ["code", "design", "audio"], text : "Currently in Development. Use the intelligence of a decommissioned military supercomputer to solve puzzles and guide the lives of humble villagers", icon : "img/tmg.png", link: "https://twitter.com/machinesgarden"},
         {title : "Ball's Revenge", year : "2017", tag : ["code"], text : "A quirky arcade-style game for Android and iOS about an alien named Ball", icon : "img/ballsrevenge.png", link: "https://play.google.com/store/apps/details?id=com.Suraksham.BallsRevenge"},
+        {title : "Bowel MOOvement", year : "2018", tag : ["code", "design", "audio", "art"], text : "A bovine platformer where you navigate tricky challenges using your gifts. An experiment in mixing together the sleek and the grotesque.", icon : "img/bm-portfolio.png", link: "https://toomuchtomato.itch.io/bowel-moovement"},
         {title : "smallworld", year : "2017", tag : ["code", "design", "audio", "art"], text : "A game that exists purely for a funky soundtrack and silly characters. Built for LD38", icon : "img/smallworld.png", link: "https://toomuchtomato.itch.io/smallworld"},
         {title : "entropy", year : "2017", tag : ["code", "design", "audio", "art"], text : "A short adventure/puzzle game with fun music and philosophical oddball characters", icon : "img/entropy.png", link: "https://toomuchtomato.itch.io/entropy"},
         {title : "Too Much Tomato", year : "2018", tag : ["art"], text : "A blog of some of my visual art experimentation", icon: "img/comic.png", link : "https://twitter.com/TooMuchTomato"},
@@ -13,6 +14,8 @@ var projectList = [
         {title : "Gardening - EP", year : "2017", tag : ["audio"], text : "An EP of experimental music", icon : "img/gardening.png",  link : "https://misterstripey.bandcamp.com/album/gardening"},
         {title : "Hole - EP", year : "2015", tag : ["audio"], text : "An EP of electronic music", icon : "img/hole.png",  link : "https://misterstripey.bandcamp.com/album/hole"},
         {title : "Professions - EP", year : "2016", tag : ["audio"], text : "An EP of experimental music and covers", icon : "img/professions.png",  link : "https://misterstripey.bandcamp.com/album/professions"}
+        
+        // images should be 400w x 300h
         
         // defunct projects
         //{title : "Mr.Stripey's Garden", year : "2016", tag : ["design"], text : "A blog with odd writings and musings", icon : "img/mrstripey.PNG",  link : "http://misterstripey.blogspot.com/"}
