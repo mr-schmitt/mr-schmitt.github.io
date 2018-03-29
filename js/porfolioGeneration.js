@@ -9,15 +9,15 @@ var projectList = [
         {title : "Bowel MOOvement", year : "2018", tag : ["code", "design", "audio", "art"], text : "A bovine platformer where you navigate tricky challenges using your gifts. An experiment in mixing together the sleek and the grotesque.", icon : "img/bm-portfolio.png", link: "https://toomuchtomato.itch.io/bowel-moovement"},
         {title : "smallworld", year : "2017", tag : ["code", "design", "audio", "art"], text : "A game that exists purely for a funky soundtrack and silly characters. Built for LD38", icon : "img/smallworld.png", link: "https://toomuchtomato.itch.io/smallworld"},
         {title : "entropy", year : "2017", tag : ["code", "design", "audio", "art"], text : "A short adventure/puzzle game with fun music and philosophical oddball characters", icon : "img/entropy.png", link: "https://toomuchtomato.itch.io/entropy"},
-        {title : "Too Much Tomato", year : "2018", tag : ["art"], text : "A blog of some of my visual art experimentation", icon: "img/comic.png", link : "https://twitter.com/TooMuchTomato"},
-        {title : "Hello Michael!", year : "2014", tag : ["design"], text : "A blog about my experiences teaching English in rural Japan", icon : "img/hellomichael.png",  link : "http://hellomaikeru.blogspot.com/"},
         {title : "Gardening - EP", year : "2017", tag : ["audio"], text : "An EP of experimental music", icon : "img/gardening.png",  link : "https://misterstripey.bandcamp.com/album/gardening"},
-        {title : "Hole - EP", year : "2015", tag : ["audio"], text : "An EP of electronic music", icon : "img/hole.png",  link : "https://misterstripey.bandcamp.com/album/hole"},
-        {title : "Professions - EP", year : "2016", tag : ["audio"], text : "An EP of experimental music and covers", icon : "img/professions.png",  link : "https://misterstripey.bandcamp.com/album/professions"}
+        {title : "Hole - EP", year : "2015", tag : ["audio"], text : "An EP of electronic music", icon : "img/hole.png",  link : "https://misterstripey.bandcamp.com/album/hole"}
         
         // images should be 400w x 300h
         
         // defunct projects
+        //{title : "Professions - EP", year : "2016", tag : ["audio"], text : "An EP of experimental music and covers", icon : "img/professions.png",  link : "https://misterstripey.bandcamp.com/album/professions"}
+        //{title : "Too Much Tomato", year : "2018", tag : ["art"], text : "A blog of some of my visual art experimentation", icon: "img/comic.png", link : "https://twitter.com/TooMuchTomato"},
+        //{title : "Hello Michael!", year : "2014", tag : ["design"], text : "A blog about my experiences teaching English in rural Japan", icon : "img/hellomichael.png",  link : "http://hellomaikeru.blogspot.com/"},
         //{title : "Mr.Stripey's Garden", year : "2016", tag : ["design"], text : "A blog with odd writings and musings", icon : "img/mrstripey.PNG",  link : "http://misterstripey.blogspot.com/"}
         //{title : "The Molar System", year : "2015", tag : ["code", "design", "audio"], text : "", icon : "img/snailboat.PNG", id: "molar-system", link : "https://mr-schmitt.github.io/molar-system"},
         //{title : "About Page",tags : ["JS", "Web"], text : "Made a landing page for my portfolio, timeline, and CV. Friendlier on the eyes.", icon : "img/about64.png", id: "about", link : "https://mr-schmitt.github.io/about"},
