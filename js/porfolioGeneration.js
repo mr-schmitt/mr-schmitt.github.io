@@ -9,8 +9,8 @@ var projectList = [
         {title : "Bowel MOOvement", year : "2018", tag : ["code", "design", "audio", "art"], text : "Navigate tricky platforming challenges in this artsy web game.", icon : "img/bm-portfolio.png", link: "https://toomuchtomato.itch.io/bowel-moovement"},
         {title : "Smallworld", year : "2017", tag : ["code", "design", "audio", "art"], text : "A game that exists purely for a funky soundtrack and silly characters.", icon : "img/smallworld.png", link: "https://toomuchtomato.itch.io/smallworld"},
         {title : "Entropy", year : "2017", tag : ["code", "design", "audio", "art"], text : "A short adventure/puzzle game with fun music and philosophical oddball characters", icon : "img/entropy.png", link: "https://toomuchtomato.itch.io/entropy"},
-        {title : "Art & Design Portfolio", year : "2018", tag : ["art"], text : "A image gallery of Michael's visual art and design work", icon: "img/comic.png", link : "https://imgur.com/a/uIJ7V"},
-        {title : "Mr.Stripey", year : "2013-2018", tag : ["audio"], text : "A collection of music composed, recorded, and or produced by Michael", icon: "img/mrs.png", link : "misterstripey.bandcamp.com"}
+        {title : "Art & Design Portfolio", year : "2018", tag : ["art"], text : "A gallery of Michael's illustration, animation, and design work", icon: "img/comic.png", link : "https://imgur.com/a/uIJ7V"},
+        {title : "Mr.Stripey", year : "2013-2018", tag : ["audio"], text : "A collection of music composed, recorded, and or produced by Michael", icon: "img/mrs.png", link : "https://misterstripey.bandcamp.com"}
 
         // images should be 400w x 300h
         
