@@ -9,14 +9,12 @@ var projectList = [
         {title : "Bowel MOOvement", year : "2018", tag : ["code", "design", "audio", "art"], text : "A bovine platformer where you navigate tricky challenges using your gifts. An experiment in mixing together the sleek and the grotesque.", icon : "img/bm-portfolio.png", link: "https://toomuchtomato.itch.io/bowel-moovement"},
         {title : "smallworld", year : "2017", tag : ["code", "design", "audio", "art"], text : "A game that exists purely for a funky soundtrack and silly characters. Built for LD38", icon : "img/smallworld.png", link: "https://toomuchtomato.itch.io/smallworld"},
         {title : "entropy", year : "2017", tag : ["code", "design", "audio", "art"], text : "A short adventure/puzzle game with fun music and philosophical oddball characters", icon : "img/entropy.png", link: "https://toomuchtomato.itch.io/entropy"},
-        {title : "Gardening - EP", year : "2017", tag : ["audio"], text : "An EP of experimental music", icon : "img/gardening.png",  link : "https://misterstripey.bandcamp.com/album/gardening"},
-        {title : "Hole - EP", year : "2015", tag : ["audio"], text : "An EP of electronic music", icon : "img/hole.png",  link : "https://misterstripey.bandcamp.com/album/hole"}
+        {title : "Art & Design Portfolio", year : "2018", tag : ["art"], text : "A image gallery of some of visual art and design work", icon: "img/comic.png", link : "https://imgur.com/a/uIJ7V"}
         
         // images should be 400w x 300h
         
         // defunct projects
         //{title : "Professions - EP", year : "2016", tag : ["audio"], text : "An EP of experimental music and covers", icon : "img/professions.png",  link : "https://misterstripey.bandcamp.com/album/professions"}
-        //{title : "Too Much Tomato", year : "2018", tag : ["art"], text : "A blog of some of my visual art experimentation", icon: "img/comic.png", link : "https://twitter.com/TooMuchTomato"},
         //{title : "Hello Michael!", year : "2014", tag : ["design"], text : "A blog about my experiences teaching English in rural Japan", icon : "img/hellomichael.png",  link : "http://hellomaikeru.blogspot.com/"},
         //{title : "Mr.Stripey's Garden", year : "2016", tag : ["design"], text : "A blog with odd writings and musings", icon : "img/mrstripey.PNG",  link : "http://misterstripey.blogspot.com/"}
         //{title : "The Molar System", year : "2015", tag : ["code", "design", "audio"], text : "", icon : "img/snailboat.PNG", id: "molar-system", link : "https://mr-schmitt.github.io/molar-system"},
@@ -24,6 +22,8 @@ var projectList = [
         //{title : "BeetleTank", year : "2017", tags : ["Unity", "GameDev"], text : "A game designed, programmed, and asset-ed in a week as a part of Game-A-Week", icon : "img/bt64.png", id : "sw", link: "https://toomuchtomato.itch.io/beetletank"},
         //{title : "RollerBall Game", year : "2016", tags : ["Unity", "C#"], text : "Simple game built with Unity", icon : "img/ball64.png", id : "ball-game", link: "https://mr-schmitt.github.io/ball-game"},
         //{title : "Two-Player Pong Game", year : "2016", tags : ["JS"], text : "In-browser game built using Superpowers", icon : "img/pong64.png", id: "pong", link : "https://mr-schmitt.github.io/pong-sp"},
+        //{title : "Gardening - EP", year : "2017", tag : ["audio"], text : "An EP of experimental music", icon : "img/gardening.png",  link : "https://misterstripey.bandcamp.com/album/gardening"},
+        //{title : "Hole - EP", year : "2015", tag : ["audio"], text : "An EP of electronic music", icon : "img/hole.png",  link : "https://misterstripey.bandcamp.com/album/hole"}
         
     ];
     
@@ -50,23 +50,23 @@ function generateProjectEntries(projArray){
 
 function printIcons(iconArray){
     var stringOutput = "";
-    for (var i in iconArray){
-        switch(iconArray[i]){
-            case "code":
-                stringOutput += "<i class='fas fa-code' title='Development'></i>    ";
-                break;
-            case "design":
-                stringOutput += "<i class='far fa-file-alt' title='Design/Writing'></i>    ";
-                break;
-            case "audio":
-                stringOutput += "<i class='fas fa-music' title='Audio'></i>    ";
-                break;
-            case "art":
-               stringOutput += "<i class='fas fa-paint-brush' title='Art'></i>    ";
-            default:
-                break;
-        }
-    }
+    // for (var i in iconArray){
+    //     switch(iconArray[i]){
+    //         case "code":
+    //             stringOutput += "<i class='fas fa-code' title='Development'></i>    ";
+    //             break;
+    //         case "design":
+    //             stringOutput += "<i class='far fa-file-alt' title='Design/Writing'></i>    ";
+    //             break;
+    //         case "audio":
+    //             stringOutput += "<i class='fas fa-music' title='Audio'></i>    ";
+    //             break;
+    //         case "art":
+    //           stringOutput += "<i class='fas fa-paint-brush' title='Art'></i>    ";
+    //         default:
+    //             break;
+    //     }
+    // }
     return stringOutput;
 }
 
