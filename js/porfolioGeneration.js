@@ -1,5 +1,5 @@
 var projectList = [
-        {title : "Mod Design: Dimensions", year : "2016", tag : ["code", "design", "art"], text : "An online course in Java Programming and Minecraft Modding", icon : "img/MD1D2.png", link : "http://www.youthdigital.com/expansions.html"},
+        {title : "Mod Design: Dimensions", year : "2016", tag : ["code", "design", "art"], text : "An online course in Java Programming and Minecraft Modding", icon : "img/MD1D2.png", link : "http://www.youthdigital.com"},
         {title : "Snailboat", year : "2017", tag : ["code", "design", "audio"], text : "Set snail for adventure! A challenging grid-based puzzle game.", icon : "img/snailboat.png", link: "https://toomuchtomato.itch.io/snailboat"},
         {title : "Game Development 1", year : "2016", tag : ["code", "design"], text : "An online course in Unity 3D Game development and C# programming", icon : "img/UD1.png", link: "http://www.youthdigital.com/3d-game-development-1"},
         {title : "Chicken Tender", year : "2017", tag : ["code", "design","audio", "art"], text : "Tend to your flock! A silly agricultural simulator.", icon : "img/chickentender.png", link: "https://toomuchtomato.itch.io/chicken-tender"},
