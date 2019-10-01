@@ -4,7 +4,7 @@ var projectList = [
         {title : "Duncan's Flying Tugboat", role: "Developer/Designer", year : "2019", tag : ["code", "art"], text : "An interactive storybook coming this soon for iOS", icon : "img/DFT.png", link: "https://www.skyfarminteractive.com/"},
         {title : "Jam Games", year : "", role: "Developer/Designer", tag : ["code", "design","audio", "art"], text : "A collection of odd games created in game jams", icon : "img/chickentender.png", link: "https://toomuchtomato.itch.io"},
         {title : "The Machine's Garden", year : "2018", role: "Designer", tag : ["design", "audio"], text : "Use the intelligence of a decommissioned military supercomputer to solve puzzles and guide the lives of humble villagers (unreleased)", icon : "img/tmg.png", link: "https://twitter.com/machinesgarden"},
-        {title : "Ball's Revenge", year : "2017", role:"Programmer", tag : ["code"], text : "(programmer) A quirky arcade-style game for Android and iOS about an alien named Ball", icon : "img/ballsrevenge.png", link: "https://play.google.com/store/apps/details?id=com.Suraksham.BallsRevengeLite&hl=en_US"},
+        {title : "Ball's Revenge", year : "2017", role:"Programmer", tag : ["code"], text : "A quirky arcade-style game for Android and iOS about an alien named Ball", icon : "img/ballsrevenge.png", link: "https://play.google.com/store/apps/details?id=com.Suraksham.BallsRevengeLite&hl=en_US"},
         {title : "Entropy", year : "2017", role: "Developer/Designer", tag : ["code", "design", "audio", "art"], text : "A short adventure/puzzle game with fun music and philosophical oddball characters", icon : "img/entropy.png", link: "https://toomuchtomato.itch.io/entropy"}
 
         // images should be 400w x 300h
@@ -44,8 +44,8 @@ function generateProjectEntries(projArray){
             document.getElementById("projects").insertAdjacentHTML("beforeEnd",
                 "<figure class='white'><a href='" + projArray[i].link + "'>" +
                 "<img src='" + projArray[i].icon + "' />" +
-                "<dl><dt>" + projArray[i].role + "<br>" + projArray[i].title +
-                /* +"  ("  +  projArray[i].year + ")</dt>"*/ "<hr>" +
+                "<dl><dt>" + projArray[i].title + "</dt>" +
+                "<dd>" + projArray[i].role + "</dd><hr>" +
                 "<dd>" + projArray[i].text + "</dd></dl></a>" +
                 "<div id = 'wrapper-part-info'><div id = 'part-info'>" +
                 /*icons*/ "</div></div></figure>"
