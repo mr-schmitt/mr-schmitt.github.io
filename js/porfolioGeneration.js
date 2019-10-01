@@ -44,10 +44,11 @@ function generateProjectEntries(projArray){
             document.getElementById("projects").insertAdjacentHTML("beforeEnd",
                 "<figure class='white'><a href='" + projArray[i].link + "'>" +
                 "<img src='" + projArray[i].icon + "' />" +
-                "<dl><dt>" + projArray[i].title +"  ("  +  projArray[i].year + ")</dt>" +
+                "<dl><dt>" + projArray[i].role + "<br>" + projArray[i].title +
+                /* +"  ("  +  projArray[i].year + ")</dt>"*/ "<hr>" +
                 "<dd>" + projArray[i].text + "</dd></dl></a>" +
                 "<div id = 'wrapper-part-info'><div id = 'part-info'>" +
-                projArray[i].role + "</div></div></figure>"
+                /*icons*/ "</div></div></figure>"
             );
         }
     }
