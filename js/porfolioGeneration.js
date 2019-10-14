@@ -1,5 +1,5 @@
 var projectList = [
-        {title : "Snailboat Mobile", role:"Developer/Designer", year : "2019", tag : ["code", "design", "audio"], text : "A short and sweet puzzle game for Android and iOS", icon : "img/snailboat-mockups.png", link: "https://play.google.com/store/apps/details?id=com.TooMuchTomato.snailboat_android"},
+        {title : "Snailboat Mobile", role:"Developer/Designer", year : "2019", tag : ["code", "design", "audio"], text : "A short and sweet puzzle game for Android and iOS", icon : "img/snailboat-mockups.png", link: "https://toomuchtomato.itch.io/snailboat-mobile"},
         {title : "Game Development Courses", role: "Instructional Designer", year : "2015-2017", tag : ["code", "design", "art"], text : "Online courses in Game Development, Unity, and Minecraft modding", icon : "img/MD1D2.png", link : "https://www.apexlearning.com/technology-courses"},
         {title : "Duncan's Flying Tugboat", role: "Developer/Designer", year : "2019", tag : ["code", "art"], text : "An interactive storybook coming this soon for iOS", icon : "img/DFT.png", link: "https://www.skyfarminteractive.com/"},
         {title : "Jam Games", year : "", role: "Developer/Designer", tag : ["code", "design","audio", "art"], text : "A collection of odd games created in game jams", icon : "img/chickentender.png", link: "https://toomuchtomato.itch.io"},
